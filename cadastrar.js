@@ -1,4 +1,4 @@
-const urlBackend = "http://localhost:3000"
+const urlBackend = "http://localhost:3001"
 
 const inputTitulo = document.getElementById("titulo")
 const inputArtista = document.getElementById("artista")
@@ -31,8 +31,8 @@ async function cadastrarMusica() {
         body: JSON.stringify(musica)
     })
 
-    const resposta2 = await resposta.json()
-    alert(resposta2.mensagem)
+    const respostaTransformada = await resposta.json()
+    alert(respostaTransformada.mensagem)
 
     window.location.href = "index.html"
 }
