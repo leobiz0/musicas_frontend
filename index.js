@@ -1,4 +1,4 @@
-const urlBackend = "https://musicas-backend-smoky.vercel.app/"
+const urlBackend = "https://musicas-backend-smoky.vercel.app"
 const listaMusicas = document.getElementById("listaMusicas")
 
 async function buscarMusicas() {
